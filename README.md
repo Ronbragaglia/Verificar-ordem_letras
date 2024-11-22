@@ -18,3 +18,4 @@ A função é testada com duas frases (frase1 e frase2).
 O resultado é impresso, indicando se as letras da palavra_fornecida aparecem na mesma ordem nas frases fornecidas.
 
 
+![image](https://github.com/user-attachments/assets/8731445f-8147-4874-b26a-c39d3c72c725)
