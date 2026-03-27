@@ -1,21 +1,41 @@
-Observações sobre o Código:
+# Verificador de Ordem de Letras
 
-Importação Necessária:
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white) ![Topic](https://img.shields.io/badge/Topic-python-regex-green) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-O código importa a biblioteca re, que é utilizada para trabalhar com expressões regulares em Python.
+## Descrição
 
-Definição da Função:
+Utilitário Python com regex para verificar se as letras de uma palavra aparecem na mesma ordem dentro de uma frase, sem necessidade de serem contíguas.
 
-A função verificar_ordem_letras recebe duas entradas: palavra e frase.
-Dentro da função, o padrão é gerado a partir da palavra utilizando '.*'.join(list(palavra)), o que cria um padrão que verifica se cada letra da palavra aparece na frase na mesma ordem, mas não necessariamente contígua.
+## Funcionalidades
 
-A função utiliza re.search para verificar se o padrão está presente na frase.
+- Verificação de subsequência de letras em frases
+- Uso avançado de expressões regulares com o módulo `re`
+- Função reutilizável `verificar_ordem_letras(palavra, frase)`
+- Lógica compacta e de fácil integração
 
+## Stack Tecnológico
 
-Testes da Função:
+| Tecnologia | Descrição |
+|---|---|
+| Python | Linguagem principal |
+| re | Módulo de expressões regulares (stdlib) |
 
-A função é testada com duas frases (frase1 e frase2).
-O resultado é impresso, indicando se as letras da palavra_fornecida aparecem na mesma ordem nas frases fornecidas.
+## Como Usar
 
+```python
+from solucao import verificar_ordem_letras
 
-![image](https://github.com/user-attachments/assets/8731445f-8147-4874-b26a-c39d3c72c725)
+resultado = verificar_ordem_letras("amor", "a melhor forma de viver")
+print(resultado)  # True ou False
+```
+
+## Estrutura de Pastas
+
+```
+├── solucao.py
+└── README.md
+```
+
+---
+
+> Feito com ❤️ por Rone Bragaglia · ML Engineer & Fundador CobrançaAuto
